@@ -6,7 +6,7 @@ By using `NEWS` category you can interact with the news providers. And get acces
 
 ```ts
 // ESM
-import { NEWS } from '@devanime/extensions';
+import { NEWS } from '@galaxywolfv/devanime';
 
 // <providerName> is the name of the provider you want to use. list of the proivders is below.
 const newsProvider = NEWS.<providerName>();

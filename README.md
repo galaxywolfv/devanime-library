@@ -17,15 +17,15 @@ DevAnime library is a Node library which provides high-level APIs to get informa
 
 To use DevAnime library in your project, run:
 ```bash
-yarn add @devanime/extensions
-# or "npm i @devanime/extensions"
+yarn add @galaxywolfv/devanime
+# or "npm i @galaxywolfv/devanime"
 ```
 
 ### Usage
 
 **Example** - searching for a book using the libgen provider.
 ```ts
-import { BOOKS } from "@devanime/extensions"
+import { BOOKS } from "@galaxywolfv/devanime"
 
 // Create a new instance of the Libgen provider
 const books = new BOOKS.Libgen();
@@ -38,7 +38,7 @@ const data = books.search('pride and prejudice').then(data => {
 
 **Exmaple** - searching for anime using the gogoanime provider.
 ```ts
-import { ANIME } from "@devanime/extensions"
+import { ANIME } from "@galaxywolfv/devanime"
 
 // Create a new instance of the Gogoanime provider
 const gogoanime = new ANIME.Gogoanime();

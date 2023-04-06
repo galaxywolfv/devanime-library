@@ -6,7 +6,7 @@ By using `META` category you can interact with the custom providers. And get acc
 
 ```ts
 // ESM
-import { META } from '@devanime/extensions';
+import { META } from '@galaxywolfv/devanime';
 
 // <providerName> is the name of the provider you want to use. list of the proivders is below.
 const metaProvider = META.<providerName>();

@@ -6,7 +6,7 @@ By using `MANGA` category you can interact with the manga providers. And have ac
 
 ```ts
 // ESM
-import { MANGA } from '@devanime/extensions';
+import { MANGA } from '@galaxywolfv/devanime';
 
 // <providerName> is the name of the provider you want to use. list of the proivders is below.
 const mangaProvider = MANGA.<providerName>();

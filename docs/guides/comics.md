@@ -6,7 +6,7 @@ By using `COMICS` category you can interact with the book providers. And have ac
 
 ```ts
 // ESM
-import { COMICS } from '@devanime/extensions';
+import { COMICS } from '@galaxywolfv/devanime';
 
 // <providerName> is the name of the provider you want to use. list of the proivders is below.
 const comicProvider = COMICS.<providerName>();

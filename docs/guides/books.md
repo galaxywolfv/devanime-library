@@ -6,7 +6,7 @@ By using `BOOKS` category you can interact with the book providers. And have acc
 
 ```ts
 // ESM
-import { BOOKS } from '@devanime/extensions';
+import { BOOKS } from '@galaxywolfv/devanime';
 
 // <providerName> is the name of the provider you want to use. list of the proivders is below.
 const bookProvider = BOOKS.<providerName>();

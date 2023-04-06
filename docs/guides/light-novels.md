@@ -6,7 +6,7 @@ By using `LIGHT_NOVELS` category you can interact with the light novel providers
 
 ```ts
 // ESM
-import { LIGHT_NOVELS } from '@devanime/extensions';
+import { LIGHT_NOVELS } from '@galaxywolfv/devanime';
 
 // <providerName> is the name of the provider you want to use. list of the proivders is below.
 const lightnovelProvider = LIGHT_NOVELS.<providerName>();

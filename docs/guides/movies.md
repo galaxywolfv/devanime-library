@@ -6,7 +6,7 @@ By using `MOVIES` category you can interact with the movie providers. And have a
 
 ```ts
 // ESM
-import { MOVIES } from '@devanime/extensions';
+import { MOVIES } from '@galaxywolfv/devanime';
 
 // <providerName> is the name of the provider you want to use. list of the proivders is below.
 const movieProvider = MOVIES.<providerName>();

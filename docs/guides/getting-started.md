@@ -11,11 +11,11 @@ Let's start!
 ### Installation
 Install with npm:
 ```sh
-npm i @devanime/extensions
+npm i @galaxywolfv/devanime
 ```
 Install with yarn:
 ```sh
-yarn add @devanime/extensions
+yarn add @galaxywolfv/devanime
 ```
 
 ### Usage
@@ -23,9 +23,9 @@ yarn add @devanime/extensions
 **Example** - searching for a book using the libgen provider.
 ```ts
 // ESM
-import { BOOKS } from "@devanime/extensions"
+import { BOOKS } from "@galaxywolfv/devanime"
 // CommonJS
-const { BOOKS } = require("@devanime/extensions");
+const { BOOKS } = require("@galaxywolfv/devanime");
 
 const main = async () => {
   // Create a new instance of the Libgen provider
@@ -47,9 +47,9 @@ main();
 **Example** - searching for anime using the gogoanime provider.
 ```ts
 // ESM
-import { ANIME } from "@devanime/extensions"
+import { ANIME } from "@galaxywolfv/devanime"
 // CommonJS
-const { ANIME } = require("@devanime/extensions");
+const { ANIME } = require("@galaxywolfv/devanime");
 
 const main = async () => {
   // Create a new instance of the Gogoanime provider

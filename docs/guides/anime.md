@@ -6,7 +6,7 @@ By using `ANIME` category you can interact with the anime providers. And get acc
 
 ```ts
 // ESM
-import { ANIME } from '@devanime/extensions';
+import { ANIME } from '@galaxywolfv/devanime';
 
 // <providerName> is the name of the provider you want to use. list of the proivders is below.
 const animeProvider = ANIME.<providerName>();
