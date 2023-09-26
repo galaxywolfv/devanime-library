@@ -10,9 +10,9 @@ const utils_1 = require("../../utils");
 const extractors_1 = require("../../extractors");
 class Gogoanime extends models_1.AnimeParser {
     constructor(proxyConfig) {
-        super('https://www.gogoanime.dk', proxyConfig);
+        super('https://www.gogoanime.io', proxyConfig);
         this.name = 'Gogoanime';
-        this.baseUrl = 'https://gogoanime.cl';
+        this.baseUrl = 'https://gogoanime.io';
         this.logo = 'https://play-lh.googleusercontent.com/MaGEiAEhNHAJXcXKzqTNgxqRmhuKB1rCUgb15UrN_mWUNRnLpO5T1qja64oRasO7mn0';
         this.classPath = 'ANIME.Gogoanime';
         this.ajaxUrl = 'https://ajax.gogo-load.com/ajax';
@@ -172,8 +172,7 @@ class Gogoanime extends models_1.AnimeParser {
                         serverUrl = new URL(`${$('#load_anime > div > div > iframe').attr('src')}`);
                         break;
                     case models_1.StreamingServers.VidStreaming:
-                        serverUrl = new URL(`${(_a = $('div.anime_video_body > div.anime_muti_link > ul > li.vidcdn > a')
-                            .attr('data-video')) === null || _a === void 0 ? void 0 : _a.replace('.pro', '.net')}`);
+                        serverUrl = new URL(`${$('div.anime_video_body > div.anime_muti_link > ul > li.vidcdn > a').attr('data-video')}`);
                         break;
                     case models_1.StreamingServers.StreamSB:
                         serverUrl = new URL($('div.anime_video_body > div.anime_muti_link > ul > li.streamsb > a').attr('data-video'));

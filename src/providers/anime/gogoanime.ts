@@ -20,14 +20,14 @@ import { GogoCDN, StreamSB } from '../../extractors';
 
 class Gogoanime extends AnimeParser {
   override readonly name = 'Gogoanime';
-  protected override baseUrl = 'https://gogoanime.cl';
+  protected override baseUrl = 'https://gogoanime.io';
   protected override logo =
     'https://play-lh.googleusercontent.com/MaGEiAEhNHAJXcXKzqTNgxqRmhuKB1rCUgb15UrN_mWUNRnLpO5T1qja64oRasO7mn0';
   protected override classPath = 'ANIME.Gogoanime';
 
   private readonly ajaxUrl = 'https://ajax.gogo-load.com/ajax';
   constructor(proxyConfig?: ProxyConfig) {
-    super('https://www.gogoanime.dk', proxyConfig);
+    super('https://www.gogoanime.io', proxyConfig);
   }
 
   /**
@@ -212,9 +212,7 @@ class Gogoanime extends AnimeParser {
           break;
         case StreamingServers.VidStreaming:
           serverUrl = new URL(
-            `${$('div.anime_video_body > div.anime_muti_link > ul > li.vidcdn > a')
-              .attr('data-video')
-              ?.replace('.pro', '.net')}`
+            `${$('div.anime_video_body > div.anime_muti_link > ul > li.vidcdn > a').attr('data-video')}`
           );
           break;
         case StreamingServers.StreamSB:
